@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <u> <h1 align="center">
+        Registration Form</h1></u>
+
+    <table border="1" width="50%" align="center" bgcolor="yellow">
+        <tbody><tr>
+            <td>
+                <h3 align="center"><label for="">First Name</label>
+                    <input type="text" placeholder="Your First Name">
+                    <br>
+                    <br>
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Your Last Name">
+                    <br>
+                    <br>
+                    <label for="">Father Name</label>
+                    <input type="text" placeholder="Your Father Name">
+                    <br>
+                    <br>
+                    <label for="">Phone Number</label>
+                    <input type="tel" placeholder="Your Phone Number">
+                    <br>
+                    <br>
+                    <label for="">Email</label>
+                    <input type="mail" placeholder="Your Email">
+                    <br>
+                    <br>
+                    <label for="">DOB</label>
+                    <input type="date">
+                    <br>
+                    <br>
+                    </h3><h1 align="center">Gender</h1>
+                    <br>
+                    <br>
+                    <center>
+                        <label for="r1">Female</label>
+                        <input type="radio" name="r1" id="">
+                        <label for="r1">Male</label>
+                        <input type="radio" name="r1" id="">
+                        <label for="">Other</label>
+                        <input type="radio" name="r1" id="">
+                    </center>
+                    <h1 align="center">Skill</h1>
+                    <center>
+                        <label for="">HTML</label>
+                        <input type="checkbox" name="HTML" id="r1">
+                        <label for="">CSS</label>
+                        <input type="checkbox" name="css" id="r2">
+                        <label for="">JAVASCRIPT</label>
+                        <input type="checkbox" name="javascript" id="r3">
+                        <label for="">PYTHON</label>
+                        <input type="checkbox" name="python" id="r4">
+                    </center>
+                    <br>
+                    <center>
+                        <h1>
+                            ADDRESS
+                        </h1>
+                        <h3>
+                            CITY
+                            <select>
+                                <option value="">_________________</option>
+
+                                <option value="">Delhi</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Dehradun</option>
+                                <option value="">Pune</option>
+                                <option value="">Nagaland</option>
+                                <option value="">Tamil nadu</option>
+                                <option value="">Goa</option>
+                                <option value="">Kolkata</option>
+                                 <option value="">Siliguri</option>
+                                 <option value="">Bihar</option>
+                                 <option value="">Punjab</option>
+                            </select>
+                        </h3>
+                    </center>
+                
+                <br>
+                <br>
+                <center>
+                    <label for="Upload file"></label>
+                    <input type="file">
+                    <br>
+                    <br>
+                    <input type="Submit">
+                    <br>
+                    <br>
+                    <input type="Reset"></center>
+            </td>
+        </tr>
+    </tbody></table>
+    
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

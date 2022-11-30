@@ -1,0 +1,47 @@
+body{
+margin: 0;
+background-image: url(https://images.unsplash.com/photo-1592817797597-392e3b878e1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRvZyUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.div1{
+    height:450px;
+    width: 450px;
+    background-image: url(https://media.istockphoto.com/id/1328887289/photo/happy-dog.jpg?b=1&s=170667a&w=0&k=20&c=mp3L73BC14QUuk1EQaYtZ1-wwJRW9HAffcsGZNyMy_o=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 250px;
+    position: absolute;
+
+    animation-name: manoj;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes manoj {
+    0% {
+      left:0;
+      top:0;
+    }
+    25%{
+        left:900px;
+        top:0;
+        background-image: url(https://media.istockphoto.com/id/1398810303/photo/happy-dog-of-welsh-corgi-pembroke-breed-among-fallen-leaves-in-autumn.jpg?b=1&s=170667a&w=0&k=20&c=jklYfwJXKWHObS-kRUtN2k_A4-K6Co9NUri0qfth8us=);
+    }
+    50%{
+        left: 900px;
+        top: 310px;
+        background-image:url(https://media.istockphoto.com/id/1327654972/photo/its-a-paddle-board-time.jpg?b=1&s=170667a&w=0&k=20&c=va_mQIotDZcM0GGK-K8W2WnHz6_5wMv4fyfHja13hHw=);
+    }
+    75%{
+        left:0px ;
+        top: 310px;
+        background-image: url(https://media.istockphoto.com/id/1422002152/photo/golden-retriever-wearing-wreath-of-yellow-maple-tree-leafs.jpg?b=1&s=170667a&w=0&k=20&c=fRD_E-0rubtsn0qfBxI9v8XpdSHnU4gPw3gt5vOGHjU=);
+
+    }
+    100%{
+        left: 0px;
+        top: 0;
+        background-image: url(https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    }
+}

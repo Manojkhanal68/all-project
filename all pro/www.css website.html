@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.css website</title>
+<style>
+   body { background-image:url(https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    }
+    h1{
+        text-align: center;
+        color: #efeefb;
+       font-style: italic;
+       font-size: 35px;
+       margin-top: 150px;
+       text-shadow: 3px 4px rgb(1, 0, 38);
+    }
+    div{
+        margin-top: 60px;
+        margin-left: 900px;
+        word-spacing: 50px;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+    a{
+        color: black;
+    }
+
+    .round{
+        height: 400px;
+        width: 400px;
+        margin: auto;
+        border-top-style:dashed ;
+        border-bottom-style:double;
+       border-radius: 200px;
+       background-image: url(https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+
+</style></head>
+
+<body>
+   <div><a href="http://127.0.0.1:5500/index.html">HOME</a> <a href="http://127.0.0.1:5500/index.html">CONTACT</a>  <a href="http://127.0.0.1:5500/index.html">ABOUTUS</a>  <a href="http://127.0.0.1:5500/index.html">WORK</a></div> 
+
+    <h1>
+       WELCOME TO COMPUTER WORLD
+    </h1>
+    <div class="round">
+
+    </div>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
